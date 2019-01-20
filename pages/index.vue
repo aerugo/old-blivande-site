@@ -55,11 +55,11 @@ import axios from 'axios'
 import countTo from 'vue-count-to'
 import Vuex from 'vuex'
 
-import Hero from '../components/Hero.vue'
-import Banner from '../components/Banner.vue'
-import FrontPageSectionWhite from '../components/FrontPageSectionWhite.vue'
-import FrontPageSectionBackground from '../components/FrontPageSectionBackground.vue'
-import FrontPageFooter from '../components/FrontPageFooter.vue'
+import Hero from '~/components/Hero.vue'
+import Banner from '~/components/Banner.vue'
+import FrontPageSectionWhite from '~/components/FrontPageSectionWhite.vue'
+import FrontPageSectionBackground from '~/components/FrontPageSectionBackground.vue'
+import FrontPageFooter from '~/components/FrontPageFooter.vue'
 
 export default {
   components: {

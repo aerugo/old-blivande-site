@@ -20,10 +20,10 @@
 <script>
 import axios from 'axios'
 import VueMarkdown from 'vue-markdown'
-import PageBanner from '../components/PageBanner.vue'
-import FrontPageSectionWhite from '../components/FrontPageSectionWhite.vue'
-import GenericSection from '../components/GenericSection.vue'
-import FrontPageFooter from '../components/FrontPageFooter.vue'
+import PageBanner from '~/components/PageBanner.vue'
+import FrontPageSectionWhite from '~/components/FrontPageSectionWhite.vue'
+import GenericSection from '~/components/GenericSection.vue'
+import FrontPageFooter from '~/components/FrontPageFooter.vue'
 
 export default {
   components: {
