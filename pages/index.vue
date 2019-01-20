@@ -57,9 +57,9 @@ import Vuex from 'vuex'
 
 import Hero from '~/components/Hero.vue'
 import Banner from '~/components/Banner.vue'
-import FrontPageSectionWhite from '~/components/FrontPageSectionWhite.vue'
-import FrontPageSectionBackground from '~/components/FrontPageSectionBackground.vue'
-import FrontPageFooter from '~/components/FrontPageFooter.vue'
+import FrontPageSectionWhite from '~/components/FrontpageSectionWhite.vue'
+import FrontPageSectionBackground from '~/components/FrontpageSectionBackground.vue'
+import FrontPageFooter from '~/components/FrontpageFooter.vue'
 
 export default {
   components: {

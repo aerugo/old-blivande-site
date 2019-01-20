@@ -28,9 +28,9 @@
 import axios from 'axios'
 import VueMarkdown from 'vue-markdown'
 import PageBanner from '~/components/PageBanner.vue'
-import FrontPageSectionWhite from '~/components/FrontPageSectionWhite.vue'
+import FrontPageSectionWhite from '~/components/FrontpageSectionWhite.vue'
 import GenericSection from '~/components/GenericSection.vue'
-import FrontPageFooter from '~/components/FrontPageFooter.vue'
+import FrontPageFooter from '~/components/FrontpageFooter.vue'
 
 export default {
   components: {
