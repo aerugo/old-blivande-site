@@ -11,10 +11,16 @@
       justify-center
     >
       <img 
+        v-if="logo"
         :src="logo"
         class="symbol"
         alt="Blivande" 
       >
+      <h1
+        v-if="title"
+      >
+        {{ title }}
+      </h1>
     </v-layout>
 
   </v-container>
@@ -30,6 +36,10 @@ export default {
       required: true
     },
     page: {
+      type: String,
+      required: true
+    },
+    title: {
       type: String,
       required: true
     }

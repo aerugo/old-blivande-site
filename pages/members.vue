@@ -2,7 +2,7 @@
   <div>
     <v-layout row>
       <page-banner
-        :logo="tauSymbol"
+        :logo="blivandeSymbol"
         :page="pagebanner"
       />
     </v-layout>
@@ -66,7 +66,7 @@ export default {
 
     let pagebanner = 'blivandebanner'
     let members = []
-    let tauSymbol = 'blivande.png'
+    let blivandeSymbol = 'blivande.png'
     users.forEach(function(user) {
       let member = {
         title: user.name,
@@ -79,7 +79,7 @@ export default {
     })
     return {
       pagebanner,
-      tauSymbol,
+      blivandeSymbol,
       members
     }
   }

@@ -2,36 +2,68 @@
   <div>
     <v-layout row>
       <page-banner
-        :logo="betaSymbol"
         :page="pagebanner"
+        title="Contact Blivande"
       />
     </v-layout>
-    <v-layout row>
-      <front-page-section-white 
-        :sections="betaSections"
-      />
-    </v-layout>
-    <v-layout row>
-      <generic-section 
-        :title="joinBetaTitle"
-        :subtitle="betaDescriptionText"
-        :bodytext="betaPageContent"
-      />
-    </v-layout>
-
-    <section class="wrapper generic meeting">
-      <div class="inner">
-        <header 
-          class="major special meeting"
+    <v-container
+      grid-list-xs
+    >
+      <v-layout 
+        row
+      >
+        <v-flex 
+          md6
+          class="hidden-sm-and-down"
         >
-          <h1>Book a tour of Studio Beta</h1>
-        </header>
-        <calendly
-          url="https://calendly.com/blivande/blivande-tour" 
-        />
-      </div>
-    </section>
-
+          <v-img
+            src="/blivandecard.png"
+            contain
+            max-height="635px"
+          />
+        </v-flex>
+        <v-flex 
+          xs1 
+          class="hidden-sm-and-up" 
+        /> 
+        <v-flex 
+          xs12
+          sm10
+          md6
+        >
+          <header 
+            class="major"
+          >
+            <h2>What's on your mind?</h2>
+          </header>
+          <form 
+            action="https://formspree.io/info@blivande.com" 
+            method="POST"
+          >
+            <label>Name</label>
+            <input 
+              type="text" 
+              name="name">
+            <label>Email</label>
+            <input 
+              type="email" 
+              name="_replyto">
+            <label>Message</label>
+            <textarea 
+              name="message" 
+              placeholder="Enter your message" 
+              rows="6"/>
+            <input 
+              type="submit" 
+              value="Send">
+          </form>
+        </v-flex>
+        <v-flex 
+          xs1 
+          class="hidden-sm-and-up"  
+        />          
+      </v-layout>
+    </v-container>
     <v-layout row>
       <front-page-footer />
     </v-layout>
@@ -45,7 +77,6 @@ import PageBanner from '~/components/PageBanner.vue'
 import FrontPageSectionWhite from '~/components/FrontpageSectionWhite.vue'
 import GenericSection from '~/components/GenericSection.vue'
 import FrontPageFooter from '~/components/FrontpageFooter.vue'
-import Calendly from '~/components/Calendly.vue'
 
 export default {
   components: {
@@ -53,12 +84,11 @@ export default {
     VueMarkdown,
     FrontPageSectionWhite,
     GenericSection,
-    FrontPageFooter,
-    Calendly
+    FrontPageFooter
   },
   head() {
     return {
-      title: 'House Blivande – Studio Beta',
+      title: 'House Blivande – Members',
       meta: [
         {
           hid: 'description',
@@ -80,52 +110,30 @@ export default {
     }
   },
   async asyncData({ params }) {
-    let blivande_content = await axios.get(
-      'https://participio-api.herokuapp.com/discourse/blivande/frontpage'
+    let blivande_presentations = await axios.get(
+      'https://participio-api.herokuapp.com/discourse/blivande/presentations'
     )
-    let pagebanner = 'betabanner'
-    let betaSymbol = 'sbsymbol.png'
-    let betaDescriptionText = blivande_content['data']['9180']
-    let betaFlexDesk = blivande_content['data']['9397']
-    let betaFixedDesk = blivande_content['data']['9398']
-    let betaMakers = blivande_content['data']['9401']
-    let betaPageContent = blivande_content['data']['9400']
-    let tauPageContent = blivande_content['data']['9199']
-    let joinBetaTitle = 'Join Beta'
-    let betaSections = [
-      {
-        title: 'Flexible desk membership',
-        text: betaFlexDesk,
-        image: 'beta.jpg',
-        id: 1
-      },
-      {
-        title: 'Fixed desk membership',
-        text: betaFixedDesk,
-        image: 'tau.jpg',
-        id: 2
-      },
-      {
-        title: 'Artists & Makers',
-        text: betaMakers,
-        image: 'node.jpg',
-        link: '/tau',
-        button: 'More about Tau',
-        id: 3
-      }
-    ]
+    let users = Object.keys(blivande_presentations.data).map(
+      i => blivande_presentations.data[i]
+    )
 
+    let pagebanner = 'contactbanner'
+    let members = []
+    let blivandeSymbol = 'blivande.png'
+    users.forEach(function(user) {
+      let member = {
+        title: user.name,
+        text: user.presentation,
+        image: user.large_avatar,
+        link: 'http://edgeryders.eu/u/' + user.username,
+        button: 'See profile'
+      }
+      members.push(member)
+    })
     return {
       pagebanner,
-      betaSymbol,
-      betaDescriptionText,
-      betaFlexDesk,
-      betaFixedDesk,
-      betaMakers,
-      betaPageContent,
-      tauPageContent,
-      betaSections,
-      joinBetaTitle
+      blivandeSymbol,
+      members
     }
   }
 }
@@ -152,5 +160,4 @@ export default {
 @import url('../static/css/header.css');
 @import url('../static/css/footer.css');
 @import url('../static/css/nav-panel.css');
-@import url('../static/css/misc.css');
 </style>

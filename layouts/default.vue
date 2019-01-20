@@ -27,6 +27,11 @@
           >
             <a href="members">Members</a>
           </li>
+          <li
+            :class="{ current: $nuxt.$route.path == '/contact' }"
+          >
+            <a href="contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </section>

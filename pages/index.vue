@@ -150,15 +150,19 @@ export default {
       tltitle: 'The Node',
       tltext: nodeDescriptionText,
       tllogo: 'node.png',
+      tllink: 'https://www.noden.community/',
       trtitle: 'Blivande Events',
       trtext: eventDescriptionText,
       trlogo: 'event.png',
+      trlink: '#',
       bltitle: 'Transforma',
       bltext: transformaDescriptionText,
       bllogo: 'transforma.png',
+      bllink: '/tau',
       brtitle: 'Edgeryders',
       brtext: edgerydersDescriptionText,
-      brlogo: 'edgeryders.png'
+      brlogo: 'edgeryders.png',
+      brlink: 'https://edgeryders.eu/'
     }
     let footerTitle = 'Join us'
     let footerSections = []

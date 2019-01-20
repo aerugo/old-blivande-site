@@ -22,7 +22,7 @@
   margin-top: 3rem;
 }
 
-.features > ul > li > img {
+.features > ul > li > a > img {
   max-width: 100px;
 }
 

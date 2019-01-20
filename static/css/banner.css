@@ -128,6 +128,48 @@
   margin: auto;
 }
 
+#contactbanner {
+  color: #ffffff;
+  padding-bottom: 7.25rem;
+  padding: 10rem 0 8rem 0;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-attachment: fixed, fixed;
+  background-image: linear-gradient(
+      90deg,
+      rgba(58, 58, 58, 0.6),
+      rgba(58, 58, 58, 0.6)
+    ),
+    url("/oldblivande.jpg");
+  background-position: bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  min-height: calc(50vh + 7rem);
+  max-height: calc(50vh + 7rem);
+  position: relative;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+#contactbanner img {
+  max-height: calc(40vh + 3rem);
+  margin: auto;
+}
+
+#contactbanner h1{
+  color: #ffffff;
+}
+
 #banner input[type="submit"],
 #banner input[type="reset"],
 #banner input[type="button"],

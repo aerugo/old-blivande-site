@@ -47,8 +47,7 @@
             md12
             class="members"
           > 
-            <h3 class="hero">WE ARE BLIVANDE</h3> 
-            <h3 class="hero">ALWAYS BECOMING</h3>  
+            <h2 class="hero">ALWAYS BECOMING</h2>  
             <a 
               v-for="user in users"
               :key="user.id"
