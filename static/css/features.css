@@ -1,0 +1,153 @@
+/* Features */
+
+.features {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 0 0 2rem 0;
+}
+
+.features > ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.features > ul > li {
+  list-style: none;
+  margin-top: 3rem;
+}
+
+.features > ul > li > img {
+  max-width: 100px;
+}
+
+.features > ul > li > :last-child {
+  margin-bottom: 0;
+}
+
+.features > ul > li:first-child {
+  margin-top: 0;
+}
+
+.features > ul:first-child {
+  margin-right: 4rem;
+  text-align: right;
+}
+
+.features > ul:last-child {
+  margin-left: 4rem;
+  text-align: left;
+}
+
+.features > ul h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.features > .image {
+  -moz-flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+  -moz-flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+}
+
+.features > .image img {
+  border-radius: 100%;
+  box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.25);
+  display: block;
+  width: 30rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .features {
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+  }
+
+  .features > .image {
+    -moz-order: -1;
+    -webkit-order: -1;
+    -ms-order: -1;
+    order: -1;
+    margin: 0 0 3rem 0;
+    width: 100%;
+  }
+
+  .features > .image > img {
+    margin: 0 auto;
+    width: 20rem;
+  }
+
+  .features > ul {
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -moz-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    padding: 0 3rem;
+    width: 50%;
+  }
+
+  .features > ul:first-child {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .features > ul:last-child {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .features > .image img {
+    max-width: 100%;
+  }
+
+  .features > ul {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .features > .image img {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .features > ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  .features > ul > li {
+    margin-top: 2rem;
+  }
+
+  .features > ul > li:first-child {
+    margin-top: 2rem;
+  }
+
+  .features > ul:first-child > li:first-child {
+    margin-top: 0;
+  }
+}
