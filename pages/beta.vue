@@ -2,8 +2,8 @@
   <div>
     <v-layout row>
       <page-banner
+        :style="{ 'background-image': 'url(/beta.jpg)' }"
         :logo="betaSymbol"
-        :page="pagebanner"
       />
     </v-layout>
     <v-layout row>
@@ -83,7 +83,7 @@ export default {
     let blivande_content = await axios.get(
       'https://participio-api.herokuapp.com/discourse/blivande/frontpage'
     )
-    let pagebanner = 'betabanner'
+    let pagebanner = 'taubanner'
     let betaSymbol = 'sbsymbol.png'
     let betaDescriptionText = blivande_content['data']['9180']
     let betaFlexDesk = blivande_content['data']['9397']

@@ -33,7 +33,7 @@
         <ul class="actions special center">
           <li>
             <a 
-              href="mailto:info@blivande.com?Subject=Hello%20Blivande!" 
+              href="/contact" 
               target="_top"
               class="button primary wide"
             >

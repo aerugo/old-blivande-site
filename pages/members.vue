@@ -3,7 +3,7 @@
     <v-layout row>
       <page-banner
         :logo="blivandeSymbol"
-        :page="pagebanner"
+        :style="{ 'background-image': 'url(/blivande.jpg)' }"
       />
     </v-layout>
     <v-layout row>

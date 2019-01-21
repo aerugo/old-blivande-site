@@ -3,7 +3,7 @@
     <v-layout row>
       <page-banner
         :logo="tauSymbol"
-        :page="pagebanner"
+        :style="{ 'background-image': 'url(/tau.jpg)' }"
       />
     </v-layout>
     <v-layout row>

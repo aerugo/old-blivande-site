@@ -1,7 +1,7 @@
 <template>
 
   <v-container 
-    :id="page"
+    id="pagebanner"
     fluid
   >
 
@@ -32,10 +32,6 @@ import Vuex from 'vuex'
 export default {
   props: {
     logo: {
-      type: String,
-      required: true
-    },
-    page: {
       type: String,
       required: true
     },

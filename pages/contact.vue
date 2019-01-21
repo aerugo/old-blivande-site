@@ -2,11 +2,12 @@
   <div>
     <v-layout row>
       <page-banner
-        :page="pagebanner"
+        :style="{ 'background-image': 'linear-gradient(90deg, rgba(58, 58, 58, 0.6), rgba(58, 58, 58, 0.6)), url(\'/oldblivande.jpg\')'}"
         title="Contact Blivande"
       />
     </v-layout>
     <v-container
+      class="contact"
       grid-list-xs
     >
       <v-layout 
@@ -160,4 +161,5 @@ export default {
 @import url('../static/css/header.css');
 @import url('../static/css/footer.css');
 @import url('../static/css/nav-panel.css');
+@import url('../static/css/misc.css');
 </style>
