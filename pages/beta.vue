@@ -2,7 +2,7 @@
   <div>
     <v-layout row>
       <page-banner
-        :style="{ 'background-image': 'url(/beta.jpg)' }"
+        :style="{ 'background-image': 'url(/blivandebluebanner.jpg)' }"
         :logo="betaSymbol"
       />
     </v-layout>

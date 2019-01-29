@@ -293,12 +293,6 @@ header.special.major h6:after {
   }
 }
 
-@media screen and (max-width: 480px) {
-  header.major p br {
-    display: none;
-  }
-}
-
 input,
 select,
 textarea {
