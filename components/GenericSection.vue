@@ -4,16 +4,16 @@
   >
     <section class="wrapper generic">
       <div class="inner">
-        <header class="major special">
+        <!-- header class="major special">
           <h1>{{ title }}</h1>
           <p>{{ subtitle }}</p>
-        </header>
-        <div class="image main">
+        </header -->
+        <!-- div class="image main">
           <img 
             src="pic04.jpg" 
             alt=""
           >
-        </div>
+        </div-->
         <vue-markdown 
           :source="bodytext" 
         />

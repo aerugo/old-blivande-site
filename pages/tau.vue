@@ -73,13 +73,13 @@ export default {
       {
         title: 'What is Studio Tau?',
         text: tauAbout,
-        image: 'tau.jpg',
+        image: 'tau-square.jpg',
         id: 1
       },
       {
         title: 'How do I join?',
         text: tauJoin,
-        image: 'tau.jpg',
+        image: 'tau-square-alt.jpg',
         link: 'https://edgeryders.eu/c/blivande/studio-tau',
         button: 'Join the community',
         id: 2

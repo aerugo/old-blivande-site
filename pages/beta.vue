@@ -96,19 +96,19 @@ export default {
       {
         title: 'Flexible desk membership',
         text: betaFlexDesk,
-        image: 'beta.jpg',
+        image: 'blivandebeta-square1.jpg',
         id: 1
       },
       {
         title: 'Fixed desk membership',
         text: betaFixedDesk,
-        image: 'tau.jpg',
+        image: 'blivandemeeting-square.jpg',
         id: 2
       },
       {
         title: 'Artists & Makers',
         text: betaMakers,
-        image: 'node.jpg',
+        image: 'tau-square.jpg',
         link: '/tau',
         button: 'More about Tau',
         id: 3

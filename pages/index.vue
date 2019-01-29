@@ -127,7 +127,7 @@ export default {
       {
         title: 'Studio Beta',
         text: betaDescriptionText,
-        image: 'beta.jpg',
+        image: 'blivandebeta-square1.jpg',
         logo: 'studiobeta.png',
         link: '/beta',
         button: 'More about Beta',
@@ -136,7 +136,7 @@ export default {
       {
         title: 'Studio Tau',
         text: tauDescriptionText,
-        image: 'tau.jpg',
+        image: 'tau-square.jpg',
         logo: 'studiotau.png',
         link: '/tau',
         button: 'More about Tau',
@@ -145,7 +145,7 @@ export default {
     ]
     let featuresTitle = 'What else is becoming?'
     let featuresText = whatElseDescriptionText
-    let featuresImage = 'node.jpg'
+    let featuresImage = 'blivandemeeting-square.jpg'
     let features = {
       tltitle: 'The Node',
       tltext: nodeDescriptionText,
