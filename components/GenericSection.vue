@@ -2,23 +2,52 @@
   <v-container 
     fluid
   >
-    <section class="wrapper generic">
-      <div class="inner">
-        <!-- header class="major special">
-          <h1>{{ title }}</h1>
-          <p>{{ subtitle }}</p>
-        </header -->
-        <!-- div class="image main">
-          <img 
-            src="pic04.jpg" 
-            alt=""
-          >
-        </div-->
-        <vue-markdown 
-          :source="bodytext" 
+    <v-layout 
+      row
+      wrap
+    >
+      <v-flex 
+        md6
+        class="hidden-sm-and-down"
+      >
+        <v-img
+          src="/blivandemeeting.jpg"
+          contain
+          max-height="650px"
+          position="75%"
         />
-      </div>
-    </section>
+      </v-flex>
+      <v-flex 
+        xs1 
+        class="hidden-sm-and-up" 
+      /> 
+      <v-flex 
+        xs12
+        sm10
+        md6
+      >
+        <v-layout row>
+          <v-flex 
+            xs1
+            hidden-md-and-up
+          />
+          <v-flex xs10>
+            <header 
+              class="major"
+            >
+              <h2>Join Beta</h2>
+            </header>
+            <vue-markdown 
+              :source="bodytext" 
+            />
+          </v-flex>
+        </v-layout>
+      </v-flex>
+      <v-flex 
+        xs1 
+        class="hidden-sm-and-up"  
+      />          
+    </v-layout>
   </v-container>
 </template>
 

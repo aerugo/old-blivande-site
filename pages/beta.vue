@@ -96,13 +96,13 @@ export default {
       {
         title: 'Flexible desk membership',
         text: betaFlexDesk,
-        image: 'blivandebeta-square1.jpg',
+        image: 'blivandeblue2-square.jpg',
         id: 1
       },
       {
         title: 'Fixed desk membership',
         text: betaFixedDesk,
-        image: 'blivandemeeting-square.jpg',
+        image: 'blivandefixed-square.jpg',
         id: 2
       },
       {
