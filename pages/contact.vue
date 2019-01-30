@@ -89,7 +89,7 @@ export default {
   },
   head() {
     return {
-      title: 'House Blivande – Members',
+      title: 'House Blivande',
       meta: [
         {
           hid: 'description',
@@ -106,6 +106,11 @@ export default {
           co-working, co-working space, makerspace, 
           arts workshop, community, burn, burning man, 
           participatory, co-creation, stockholm`
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: 'http://www.blivande.com/blivande.jpg'
         }
       ]
     }
