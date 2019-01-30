@@ -91,8 +91,8 @@ export default {
           participatory, co-creation, stockholm`
         },
         {
-          hid: 'image',
-          name: 'image',
+          hid: 'og:image',
+          name: 'og:image',
           content: 'http://www.blivande.com/blivande.jpg'
         }
       ]
