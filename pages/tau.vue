@@ -67,12 +67,11 @@ export default {
     )
     let pagebanner = 'taubanner'
     let tauSymbol = 'stsymbol.png'
-    let betaDescriptionText = blivande_content['data']['9180']
-    let tauAbout = blivande_content['data']['9402']
-    let tauJoin = blivande_content['data']['9403']
-    let betaMakers = blivande_content['data']['9401']
-    let betaPageContent = blivande_content['data']['9400']
-    let tauPageContent = blivande_content['data']['9199']
+    let tauAbout = blivande_content['data']['59']
+    let tauJoin = blivande_content['data']['60']
+    let betaMakers = blivande_content['data']['58']
+    let betaPageContent = blivande_content['data']['57']
+    let tauPageContent = blivande_content['data']['36']
     let joinBetaTitle = 'Join Beta'
     let tauSections = [
       {
@@ -94,7 +93,6 @@ export default {
     return {
       pagebanner,
       tauSymbol,
-      betaDescriptionText,
       tauAbout,
       tauJoin,
       betaMakers,

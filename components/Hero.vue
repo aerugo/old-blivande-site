@@ -51,7 +51,7 @@
             <a 
               v-for="user in users"
               :key="user.id"
-              :href="'https://edgeryders.eu/u/' + user.username"
+              :href="'https://forum.blivande.com/u/' + user.username"
             >
               <img
                 :src="user.avatar_template.replace('{size}', '50')"

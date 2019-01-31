@@ -37,7 +37,16 @@
               target="_top"
               class="button primary wide"
             >
-              Talk to Blivande
+              Contact Blivande
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://forum.blivande.com/" 
+              target="_top"
+              class="button primary wide"
+            >
+              Community Forum
             </a>
           </li>
         </ul>
@@ -116,17 +125,17 @@ export default {
     let blivande_content = await axios.get(
       'https://participio-api.herokuapp.com/discourse/blivande/frontpage'
     )
-    let blivandeDescriptionText = blivande_content['data']['9176']
-    let betaDescriptionText = blivande_content['data']['9180']
-    let tauDescriptionText = blivande_content['data']['9179']
-    let nodeDescriptionText = blivande_content['data']['9181']
-    let eventDescriptionText = blivande_content['data']['9182']
-    let footerText = blivande_content['data']['9393']
-    let edgerydersDescriptionText = blivande_content['data']['9392']
-    let transformaDescriptionText = blivande_content['data']['9391']
-    let whatElseDescriptionText = blivande_content['data']['9394']
-    let betaPageContent = blivande_content['data']['9290']
-    let tauPageContent = blivande_content['data']['9199']
+    let blivandeDescriptionText = blivande_content['data']['77']
+    let betaDescriptionText = blivande_content['data']['67']
+    let tauDescriptionText = blivande_content['data']['66']
+    let nodeDescriptionText = blivande_content['data']['78']
+    let eventDescriptionText = blivande_content['data']['68']
+    let footerText = blivande_content['data']['53']
+    let edgerydersDescriptionText = blivande_content['data']['52']
+    let transformaDescriptionText = blivande_content['data']['51']
+    let whatElseDescriptionText = blivande_content['data']['54']
+    let betaPageContent = blivande_content['data']['50']
+    let tauPageContent = blivande_content['data']['36']
     let mainTitle = 'House Blivande'
     let betaAndTauSections = [
       {

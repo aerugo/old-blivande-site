@@ -90,12 +90,12 @@ export default {
     )
     let pagebanner = 'taubanner'
     let betaSymbol = 'sbsymbol.png'
-    let betaDescriptionText = blivande_content['data']['9180']
-    let betaFlexDesk = blivande_content['data']['9397']
-    let betaFixedDesk = blivande_content['data']['9398']
-    let betaMakers = blivande_content['data']['9401']
-    let betaPageContent = blivande_content['data']['9400']
-    let tauPageContent = blivande_content['data']['9199']
+    let betaDescriptionText = blivande_content['data']['67']
+    let betaFlexDesk = blivande_content['data']['55']
+    let betaFixedDesk = blivande_content['data']['56']
+    let betaMakers = blivande_content['data']['58']
+    let betaPageContent = blivande_content['data']['57']
+    let tauPageContent = blivande_content['data']['36']
     let joinBetaTitle = 'Join Beta'
     let betaSections = [
       {

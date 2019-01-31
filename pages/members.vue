@@ -77,7 +77,7 @@ export default {
         title: user.name,
         text: user.presentation,
         image: user.large_avatar,
-        link: 'http://edgeryders.eu/u/' + user.username,
+        link: 'http://forum.blivande.com/u/' + user.username,
         button: 'See profile'
       }
       members.push(member)
