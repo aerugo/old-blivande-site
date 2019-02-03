@@ -27,7 +27,7 @@
           <h1>Book a tour of Studio Beta</h1>
         </header>
         <calendly
-          url="https://calendly.com/blivande/blivande-tour" 
+          url="https://calendly.com/blivande-core/blivande-beta-tour" 
         />
       </div>
     </section>
