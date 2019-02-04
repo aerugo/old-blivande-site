@@ -18,7 +18,7 @@
       </li>
       <li>
         <a 
-          href="#" 
+          href="https://www.instagram.com/blivande/" 
           class="icon alt fa-instagram">
           <span 
             class="label">

@@ -84,7 +84,7 @@ export default {
         title: 'How do I join?',
         text: tauJoin,
         image: 'tau-square-alt.jpg',
-        link: 'https://edgeryders.eu/c/blivande/studio-tau',
+        link: 'https://forum.blivande.com/c/tau',
         button: 'Join the community',
         id: 2
       }
