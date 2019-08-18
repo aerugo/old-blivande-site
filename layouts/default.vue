@@ -23,7 +23,12 @@
             <a href="tau">Tau</a>
           </li>
           <li
-            :class="{ 'current': $nuxt.$route.path == '/members' }"
+            :class="{ 'current': $nuxt.$route.path == '/frihamnstorget' }"
+          >
+            <a href="frihamnstorget">Frihamnstorget</a>
+          </li>
+          <li
+            :class="{ 'current hidden-xs-only': $nuxt.$route.path == '/members' }"
           >
             <a href="members">Members</a>
           </li>
