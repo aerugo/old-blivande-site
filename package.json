@@ -22,7 +22,7 @@
     "cross-env": "^5.2.0",
     "moment": "^2.22.2",
     "normalize.css": "^7.0.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "vue-count-to": "^1.0.13",
     "vue-markdown": "^2.2.4",
     "vuetify": "^1.2.4",
